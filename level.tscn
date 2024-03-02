@@ -55,6 +55,7 @@ position = Vector2(2789, 2)
 scale = Vector2(5, 5)
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="."]
+collision_layer = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D5"]
 position = Vector2(110.375, 1890)

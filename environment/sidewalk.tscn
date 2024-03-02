@@ -10,6 +10,7 @@ size = Vector2(345.479, 16)
 size = Vector2(20, 579.75)
 
 [node name="Sidewalk" type="StaticBody2D"]
+collision_layer = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_repeat = 2

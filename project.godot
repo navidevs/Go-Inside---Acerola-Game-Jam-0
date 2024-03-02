@@ -52,6 +52,12 @@ jump={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Lil Guy"
+2d_physics/layer_2="Collidable Environment"
+2d_physics/layer_3="Background Enviros"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
