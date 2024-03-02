@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://d0v1rp135356r"]
+[gd_scene load_steps=10 format=3 uid="uid://d0v1rp135356r"]
 
 [ext_resource type="PackedScene" uid="uid://dhma5dt5vlstf" path="res://environment/sidewalk.tscn" id="1_gv1yf"]
 [ext_resource type="PackedScene" uid="uid://ihxqpms2ofcr" path="res://characters/lil_guy.tscn" id="1_ka5v4"]
 [ext_resource type="PackedScene" uid="uid://6sm41uyny54w" path="res://environment/cloudysky.tscn" id="1_n86oc"]
 [ext_resource type="PackedScene" uid="uid://cn6frtsqk7lsg" path="res://environment/ground1.tscn" id="2_kwdj2"]
+[ext_resource type="PackedScene" uid="uid://b48ke1nnjoa71" path="res://ocean.tscn" id="4_uwgj8"]
 [ext_resource type="PackedScene" uid="uid://dyd5lfi3lne83" path="res://environment/waves.tscn" id="5_uxi2y"]
 [ext_resource type="PackedScene" uid="uid://b80mm1kv5qgfp" path="res://environment/sun.tscn" id="6_0bccq"]
 [ext_resource type="PackedScene" uid="uid://jfuugtt6v8hp" path="res://environment/space1.tscn" id="6_elo76"]
@@ -59,81 +60,85 @@ scale = Vector2(5, 5)
 position = Vector2(110.375, 1890)
 shape = SubResource("RectangleShape2D_migj7")
 
+[node name="Ocean" parent="." instance=ExtResource("4_uwgj8")]
+position = Vector2(2423, 6451)
+scale = Vector2(10, 10)
+
 [node name="Waves" parent="." instance=ExtResource("5_uxi2y")]
 position = Vector2(2326, 3294)
 scale = Vector2(20, 20)
 
 [node name="Node2D" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(-260, 5339)
+position = Vector2(-260, 13313)
 scale = Vector2(10, 10)
 
 [node name="Node2D2" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(5661, 5351)
+position = Vector2(5661, 13325)
 scale = Vector2(10, 10)
 
 [node name="Node2D3" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(3354, 7712)
+position = Vector2(3354, 15686)
 scale = Vector2(10, 10)
 
 [node name="Node2D4" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(-567, 7782)
+position = Vector2(-567, 15756)
 scale = Vector2(10, 10)
 
 [node name="Node2D5" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(6761, 7712)
+position = Vector2(6761, 15686)
 scale = Vector2(10, 10)
 
 [node name="Node2D6" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(653.001, 9788)
+position = Vector2(653.001, 17762)
 scale = Vector2(10, 10)
 
 [node name="Node2D7" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(4705, 10574)
+position = Vector2(4705, 18548)
 scale = Vector2(10, 10)
 
 [node name="Node2D8" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(663, 12660)
+position = Vector2(22394, 10146)
 scale = Vector2(10, 10)
 
 [node name="Node2D9" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(4815, 13325)
+position = Vector2(26546, 10811)
 scale = Vector2(10, 10)
 
 [node name="Node2D12" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(864, 18749)
+position = Vector2(22595, 16235)
 scale = Vector2(10, 10)
 
 [node name="Node2D13" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(5083, 19468)
+position = Vector2(26814, 16954)
 rotation = -0.416106
 scale = Vector2(10, 10)
 
 [node name="Node2D14" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(-95.0005, 21338)
+position = Vector2(21636, 18824)
 rotation = -0.416106
 scale = Vector2(10, 10)
 
 [node name="Node2D15" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(2398, 22441)
+position = Vector2(24129, 19927)
 rotation = -0.416106
 scale = Vector2(10, 10)
 
 [node name="Node2D16" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(6445, 22320)
+position = Vector2(28176, 19806)
 rotation = -0.416106
 scale = Vector2(10, 10)
 
 [node name="Node2D17" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(1491, 24495)
+position = Vector2(30226, 21981)
 rotation = -0.416106
 scale = Vector2(10, 10)
 
 [node name="Node2D10" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(841, 15223)
+position = Vector2(22572, 12709)
 scale = Vector2(10, 10)
 
 [node name="Node2D11" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(4662, 16676)
+position = Vector2(26393, 14162)
 scale = Vector2(10, 10)
 
 [node name="Sun" parent="." instance=ExtResource("6_0bccq")]
@@ -141,7 +146,7 @@ position = Vector2(-162, -319)
 scale = Vector2(5, 5)
 
 [node name="Sun2" parent="." instance=ExtResource("6_0bccq")]
-position = Vector2(3936, 8274)
+position = Vector2(3936, 16248)
 scale = Vector2(50, 50)
 
 [node name="Lil Guy" parent="." instance=ExtResource("1_ka5v4")]
