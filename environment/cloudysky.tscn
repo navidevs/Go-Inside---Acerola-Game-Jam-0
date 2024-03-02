@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://6sm41uyny54w"]
+
+[ext_resource type="Texture2D" uid="uid://ccpgsx1n1pp1s" path="res://sprites/environment/cloudysky.png" id="1_gvpid"]
+[ext_resource type="Texture2D" uid="uid://dut4bt6g4twok" path="res://sprites/environment/puresky.png" id="2_d84q0"]
+[ext_resource type="Texture2D" uid="uid://bo1m0eyemnviu" path="res://sprites/environment/sky1.png" id="3_lm7yc"]
+
+[node name="Sprite2D" type="Node2D"]
+texture_repeat = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_gvpid")
+region_enabled = true
+region_rect = Rect2(-345, 0, 784, 178)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture = ExtResource("2_d84q0")
+region_enabled = true
+region_rect = Rect2(-345, 0, 784, 178)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("3_lm7yc")
+region_enabled = true
+region_rect = Rect2(-259, 0, 621, 178)

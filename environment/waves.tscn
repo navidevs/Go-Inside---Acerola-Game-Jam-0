@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyd5lfi3lne83"]
+
+[ext_resource type="Texture2D" uid="uid://b4thqcw1mv3xa" path="res://sprites/environment/waves.png" id="1_ofe1g"]
+
+[node name="Waves" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture_repeat = 2
+texture = ExtResource("1_ofe1g")
+region_enabled = true
+region_rect = Rect2(-117, 0, 392, 32)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+polygon = PackedVector2Array(-9, -5, -4, -10, 1, -10, 6, -10, 11, -7, 16, -4, 20, -2, 25, 1, 32, 6, 33, 36, -196, 16, -95, -10, -96, -49, -97, -76, -82, -77, -84, -9, -78, -1, -73, 5, -66, 8, -54, 4, -47, -2, -45, -3, -36, -9, -28, -11, -25, -9, -22, -7, -20, -4, -15, -3)

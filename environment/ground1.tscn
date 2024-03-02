@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn6frtsqk7lsg"]
+
+[ext_resource type="Texture2D" uid="uid://8qiiwfrk730k" path="res://sprites/environment/ground tile v1.png" id="1_io0mc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vlmae"]
+size = Vector2(232, 61)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(18, -0.5)
+shape = SubResource("RectangleShape2D_vlmae")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(18.0263, 13.2131)
+scale = Vector2(1.10451, 1.42623)
+texture = ExtResource("1_io0mc")
+offset = Vector2(0, -0.5)
+region_enabled = true
+region_rect = Rect2(-134, 0, 210, 61)

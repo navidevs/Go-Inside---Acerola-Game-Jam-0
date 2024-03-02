@@ -1,0 +1,151 @@
+[gd_scene load_steps=9 format=3 uid="uid://d0v1rp135356r"]
+
+[ext_resource type="PackedScene" uid="uid://dhma5dt5vlstf" path="res://environment/sidewalk.tscn" id="1_gv1yf"]
+[ext_resource type="PackedScene" uid="uid://ihxqpms2ofcr" path="res://characters/lil_guy.tscn" id="1_ka5v4"]
+[ext_resource type="PackedScene" uid="uid://6sm41uyny54w" path="res://environment/cloudysky.tscn" id="1_n86oc"]
+[ext_resource type="PackedScene" uid="uid://cn6frtsqk7lsg" path="res://environment/ground1.tscn" id="2_kwdj2"]
+[ext_resource type="PackedScene" uid="uid://dyd5lfi3lne83" path="res://environment/waves.tscn" id="5_uxi2y"]
+[ext_resource type="PackedScene" uid="uid://b80mm1kv5qgfp" path="res://environment/sun.tscn" id="6_0bccq"]
+[ext_resource type="PackedScene" uid="uid://jfuugtt6v8hp" path="res://environment/space1.tscn" id="6_elo76"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_migj7"]
+size = Vector2(2879.25, 202.5)
+
+[node name="Level" type="Node2D"]
+
+[node name="SkySprite1" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(654, 2580)
+scale = Vector2(10, 10)
+
+[node name="Sprite2D2" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(4614, 2582)
+scale = Vector2(10, 10)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(-22, 387)
+scale = Vector2(13.3683, 10.2342)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(-22, 1278)
+scale = Vector2(13.3683, 10.2342)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(2469, 1278)
+scale = Vector2(13.3683, 10.2342)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(3075, 387)
+scale = Vector2(13.3683, 10.2342)
+collision_layer = 0
+collision_mask = 0
+
+[node name="Sidewalk" parent="." instance=ExtResource("1_gv1yf")]
+position = Vector2(-40, 2)
+scale = Vector2(5, 5)
+
+[node name="Sidewalk2" parent="." instance=ExtResource("1_gv1yf")]
+position = Vector2(2789, 2)
+scale = Vector2(5, 5)
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2(110.375, 1890)
+shape = SubResource("RectangleShape2D_migj7")
+
+[node name="Waves" parent="." instance=ExtResource("5_uxi2y")]
+position = Vector2(2326, 3294)
+scale = Vector2(20, 20)
+
+[node name="Node2D" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(-260, 5339)
+scale = Vector2(10, 10)
+
+[node name="Node2D2" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(5661, 5351)
+scale = Vector2(10, 10)
+
+[node name="Node2D3" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(3354, 7712)
+scale = Vector2(10, 10)
+
+[node name="Node2D4" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(-567, 7782)
+scale = Vector2(10, 10)
+
+[node name="Node2D5" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(6761, 7712)
+scale = Vector2(10, 10)
+
+[node name="Node2D6" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(653.001, 9788)
+scale = Vector2(10, 10)
+
+[node name="Node2D7" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(4705, 10574)
+scale = Vector2(10, 10)
+
+[node name="Node2D8" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(663, 12660)
+scale = Vector2(10, 10)
+
+[node name="Node2D9" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(4815, 13325)
+scale = Vector2(10, 10)
+
+[node name="Node2D12" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(864, 18749)
+scale = Vector2(10, 10)
+
+[node name="Node2D13" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(5083, 19468)
+rotation = -0.416106
+scale = Vector2(10, 10)
+
+[node name="Node2D14" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(-95.0005, 21338)
+rotation = -0.416106
+scale = Vector2(10, 10)
+
+[node name="Node2D15" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(2398, 22441)
+rotation = -0.416106
+scale = Vector2(10, 10)
+
+[node name="Node2D16" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(6445, 22320)
+rotation = -0.416106
+scale = Vector2(10, 10)
+
+[node name="Node2D17" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(1491, 24495)
+rotation = -0.416106
+scale = Vector2(10, 10)
+
+[node name="Node2D10" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(841, 15223)
+scale = Vector2(10, 10)
+
+[node name="Node2D11" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(4662, 16676)
+scale = Vector2(10, 10)
+
+[node name="Sun" parent="." instance=ExtResource("6_0bccq")]
+position = Vector2(-162, -319)
+scale = Vector2(5, 5)
+
+[node name="Sun2" parent="." instance=ExtResource("6_0bccq")]
+position = Vector2(3936, 8274)
+scale = Vector2(50, 50)
+
+[node name="Lil Guy" parent="." instance=ExtResource("1_ka5v4")]
+position = Vector2(-246, -164)
+scale = Vector2(10, 10)
+
+[node name="Camera2D" type="Camera2D" parent="Lil Guy"]

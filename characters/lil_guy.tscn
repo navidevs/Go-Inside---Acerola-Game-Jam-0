@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://ihxqpms2ofcr"]
+
+[ext_resource type="Script" path="res://characters/lil_guy.gd" id="1_u5y7x"]
+[ext_resource type="Texture2D" uid="uid://dx4vt20siuyhn" path="res://sprites/lil guy v3 walking.png" id="1_wurpv"]
+[ext_resource type="Texture2D" uid="uid://cke633r3qlbm" path="res://sprites/lil guy v3 standing.png" id="2_2r31b"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v1k2s"]
+radius = 3.0
+height = 15.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u3t4c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wurpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2r31b")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Lil Guy" type="CharacterBody2D"]
+script = ExtResource("1_u5y7x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 0.5)
+shape = SubResource("CapsuleShape2D_v1k2s")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_u3t4c")
+frame = 1
+frame_progress = 0.170893

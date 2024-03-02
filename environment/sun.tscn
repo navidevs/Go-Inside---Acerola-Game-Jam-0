@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b80mm1kv5qgfp"]
+
+[ext_resource type="Texture2D" uid="uid://brvkbm31tlxnk" path="res://sprites/environment/sun1.png" id="1_lt43f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cqqei"]
+size = Vector2(80, 3)
+
+[node name="Sun" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_lt43f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(3, -17.5)
+shape = SubResource("RectangleShape2D_cqqei")

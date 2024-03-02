@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhma5dt5vlstf"]
+
+[ext_resource type="Texture2D" uid="uid://curi8g3qkwn7n" path="res://sprites/environment/Sidewalk1.png" id="1_qtu4v"]
+[ext_resource type="Texture2D" uid="uid://jrgo5dm8hfb3" path="res://sprites/environment/weird house.png" id="2_0ikjy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cnl3o"]
+size = Vector2(345.479, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pnpfa"]
+size = Vector2(20, 579.75)
+
+[node name="Sidewalk" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(29.7395, 0)
+scale = Vector2(1.49851, 1)
+skew = 0.268781
+texture = ExtResource("1_qtu4v")
+region_enabled = true
+region_rect = Rect2(-141, 0, 378, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-18.3849, 7.71276)
+shape = SubResource("RectangleShape2D_cnl3o")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(178, -63)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_0ikjy")
+offset = Vector2(0, -0.25)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(193, 10.25)
+shape = SubResource("RectangleShape2D_pnpfa")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(-73, 166.125)
+shape = SubResource("RectangleShape2D_pnpfa")
