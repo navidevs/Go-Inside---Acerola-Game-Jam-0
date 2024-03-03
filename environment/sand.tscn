@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dc1te2fk5anoh"]
+
+[ext_resource type="Texture2D" uid="uid://bc4ayp6sdnthp" path="res://sprites/environment/sand4.png" id="1_rllfg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q7btp"]
+size = Vector2(1161.39, 165.358)
+
+[node name="Sand" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+collision_layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture_repeat = 2
+position = Vector2(-74.5955, -41.6355)
+scale = Vector2(0.620823, 0.570338)
+skew = -0.376991
+texture = ExtResource("1_rllfg")
+region_enabled = true
+region_rect = Rect2(-611.65, 0, 1855.88, 314.387)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-66.1941, -35.321)
+shape = SubResource("RectangleShape2D_q7btp")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://d0v1rp135356r"]
+[gd_scene load_steps=11 format=3 uid="uid://d0v1rp135356r"]
 
 [ext_resource type="PackedScene" uid="uid://dhma5dt5vlstf" path="res://environment/sidewalk.tscn" id="1_gv1yf"]
 [ext_resource type="PackedScene" uid="uid://ihxqpms2ofcr" path="res://characters/lil_guy.tscn" id="1_ka5v4"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dyd5lfi3lne83" path="res://environment/waves.tscn" id="5_uxi2y"]
 [ext_resource type="PackedScene" uid="uid://b80mm1kv5qgfp" path="res://environment/sun.tscn" id="6_0bccq"]
 [ext_resource type="PackedScene" uid="uid://jfuugtt6v8hp" path="res://environment/space1.tscn" id="6_elo76"]
+[ext_resource type="PackedScene" uid="uid://dc1te2fk5anoh" path="res://environment/sand.tscn" id="9_a1kw2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_migj7"]
 size = Vector2(2879.25, 202.5)
@@ -70,31 +71,31 @@ position = Vector2(-1038, 3119)
 scale = Vector2(20, 20)
 
 [node name="Node2D" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(-260, 13313)
+position = Vector2(79, 17754)
 scale = Vector2(10, 10)
 
 [node name="Node2D2" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(5661, 13325)
+position = Vector2(6000, 17766)
 scale = Vector2(10, 10)
 
 [node name="Node2D3" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(3354, 15686)
+position = Vector2(3693, 20127)
 scale = Vector2(10, 10)
 
 [node name="Node2D4" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(-567, 15756)
+position = Vector2(-228, 20197)
 scale = Vector2(10, 10)
 
 [node name="Node2D5" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(6761, 15686)
+position = Vector2(7100, 20127)
 scale = Vector2(10, 10)
 
 [node name="Node2D6" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(653.001, 17762)
+position = Vector2(992.001, 22203)
 scale = Vector2(10, 10)
 
 [node name="Node2D7" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(4705, 18548)
+position = Vector2(5044, 22989)
 scale = Vector2(10, 10)
 
 [node name="Node2D8" parent="." instance=ExtResource("6_elo76")]
@@ -147,8 +148,12 @@ position = Vector2(-162, -319)
 scale = Vector2(5, 5)
 
 [node name="Sun2" parent="." instance=ExtResource("6_0bccq")]
-position = Vector2(3936, 16248)
+position = Vector2(4275, 20689)
 scale = Vector2(50, 50)
+
+[node name="Sand" parent="." instance=ExtResource("9_a1kw2")]
+position = Vector2(3475, 9765)
+scale = Vector2(10, 10)
 
 [node name="Lil Guy" parent="." instance=ExtResource("1_ka5v4")]
 position = Vector2(-246, -164)
