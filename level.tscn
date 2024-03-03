@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://d0v1rp135356r"]
+[gd_scene load_steps=12 format=3 uid="uid://d0v1rp135356r"]
 
 [ext_resource type="PackedScene" uid="uid://dhma5dt5vlstf" path="res://environment/sidewalk.tscn" id="1_gv1yf"]
 [ext_resource type="PackedScene" uid="uid://ihxqpms2ofcr" path="res://characters/lil_guy.tscn" id="1_ka5v4"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b80mm1kv5qgfp" path="res://environment/sun.tscn" id="6_0bccq"]
 [ext_resource type="PackedScene" uid="uid://jfuugtt6v8hp" path="res://environment/space1.tscn" id="6_elo76"]
 [ext_resource type="PackedScene" uid="uid://dc1te2fk5anoh" path="res://environment/sand.tscn" id="9_a1kw2"]
+[ext_resource type="PackedScene" uid="uid://nlxfbgv54k87" path="res://characters/weird_fish.tscn" id="10_27vmg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_migj7"]
 size = Vector2(2879.25, 202.5)
@@ -158,5 +159,76 @@ scale = Vector2(10, 10)
 [node name="Lil Guy" parent="." instance=ExtResource("1_ka5v4")]
 position = Vector2(-246, -164)
 scale = Vector2(10, 10)
+collision_mask = 14
 
 [node name="Camera2D" type="Camera2D" parent="Lil Guy"]
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Weird Fish" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(1570, 6471)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish2" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(2403, 7219)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish3" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(823, 7721)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish4" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(2905, 5852)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish5" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(406, 5916)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish6" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(3791, 7550)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish8" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4236, 6433)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish11" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-741.999, 7017)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish12" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-679, 5772)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish13" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-971, 4896)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish9" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4083, 5404)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish14" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(5089, 4686)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish15" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(5376, 5782)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish16" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6256, 6734)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish17" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(5520, 7883)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish10" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(5137, 6928)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish7" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(1239, 5127)
+scale = Vector2(40, 40)
