@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://daomj3h0lp5g8"]
+
+[node name="Magma" type="Node2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
