@@ -66,7 +66,7 @@ position = Vector2(2423, 6451)
 scale = Vector2(10, 10)
 
 [node name="Waves" parent="." instance=ExtResource("5_uxi2y")]
-position = Vector2(2326, 3294)
+position = Vector2(-1038, 3119)
 scale = Vector2(20, 20)
 
 [node name="Node2D" parent="." instance=ExtResource("6_elo76")]

@@ -1,5 +1,6 @@
 extends Node2D
-
+var rotation_speed = 1
+var has_entered_tilt_point = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,8 +9,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if has_entered_tilt_point:
+		$CharacterBody2D.rotation += rotation_speed * delta
 
 
 func _on_tilt_point_body_entered(body):
-	$CharacterBody2D.rotation = deg_to_rad(-90)
+	#$CharacterBody2D.rotation = deg_to_rad(-90)
+	has_entered_tilt_point = true
+	
