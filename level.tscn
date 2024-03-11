@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://d0v1rp135356r"]
+[gd_scene load_steps=17 format=3 uid="uid://d0v1rp135356r"]
 
 [ext_resource type="PackedScene" uid="uid://dhma5dt5vlstf" path="res://environment/sidewalk.tscn" id="1_gv1yf"]
 [ext_resource type="PackedScene" uid="uid://ihxqpms2ofcr" path="res://characters/lil_guy.tscn" id="1_ka5v4"]
@@ -8,11 +8,18 @@
 [ext_resource type="PackedScene" uid="uid://dyd5lfi3lne83" path="res://environment/waves.tscn" id="5_uxi2y"]
 [ext_resource type="PackedScene" uid="uid://b80mm1kv5qgfp" path="res://environment/sun.tscn" id="6_0bccq"]
 [ext_resource type="PackedScene" uid="uid://jfuugtt6v8hp" path="res://environment/space1.tscn" id="6_elo76"]
+[ext_resource type="PackedScene" uid="uid://daomj3h0lp5g8" path="res://environment/magma.tscn" id="7_qcc8w"]
 [ext_resource type="PackedScene" uid="uid://dc1te2fk5anoh" path="res://environment/sand.tscn" id="9_a1kw2"]
 [ext_resource type="PackedScene" uid="uid://nlxfbgv54k87" path="res://characters/weird_fish.tscn" id="10_27vmg"]
+[ext_resource type="PackedScene" uid="uid://dm2u6bg8v4gj" path="res://environment/grass.tscn" id="12_iorqp"]
+[ext_resource type="Texture2D" uid="uid://jrgo5dm8hfb3" path="res://sprites/environment/weird house.png" id="13_eak1k"]
+[ext_resource type="Texture2D" uid="uid://dlx05r7yji4jv" path="res://sprites/lil guy standing.png" id="14_yqukb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_migj7"]
 size = Vector2(2879.25, 202.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mbjlq"]
+size = Vector2(169, 297.75)
 
 [node name="Level" type="Node2D"]
 
@@ -23,6 +30,63 @@ scale = Vector2(10, 10)
 [node name="Sprite2D2" parent="." instance=ExtResource("1_n86oc")]
 position = Vector2(4614, 2582)
 scale = Vector2(10, 10)
+
+[node name="SkySprite2" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(231, 1088)
+scale = Vector2(10, 10)
+
+[node name="Sprite2D3" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(4191, 1090)
+scale = Vector2(10, 10)
+
+[node name="SkySprite3" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(70, -545)
+scale = Vector2(10, 10)
+
+[node name="Sprite2D4" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(4030, -543)
+scale = Vector2(10, 10)
+
+[node name="SkySprite4" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(50, -1815)
+scale = Vector2(10, 10)
+
+[node name="Sprite2D5" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(4010, -1813)
+scale = Vector2(10, 10)
+
+[node name="SkySprite5" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(835, 22227)
+scale = Vector2(10, 10)
+
+[node name="Sprite2D6" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(4795, 22229)
+scale = Vector2(10, 10)
+
+[node name="SkySprite6" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(291, 19811)
+scale = Vector2(10, 10)
+
+[node name="Sprite2D7" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(4251, 19813)
+scale = Vector2(10, 10)
+
+[node name="SkySprite7" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(351, 20959)
+scale = Vector2(10, 10)
+
+[node name="Sprite2D8" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(4311, 20961)
+scale = Vector2(10, 10)
+
+[node name="Ocean" parent="." instance=ExtResource("4_uwgj8")]
+position = Vector2(1906, 6432)
+scale = Vector2(10, 10)
+
+[node name="Ocean2" parent="." instance=ExtResource("4_uwgj8")]
+position = Vector2(1892, 9868)
+scale = Vector2(10, 10)
+metadata/_edit_lock_ = true
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_kwdj2")]
 position = Vector2(-22, 387)
@@ -48,6 +112,72 @@ scale = Vector2(13.3683, 10.2342)
 collision_layer = 0
 collision_mask = 0
 
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(-529, 16539)
+scale = Vector2(30.2621, 58.071)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(2263, 12918)
+scale = Vector2(30.4525, 27.0277)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(4635, 17355)
+scale = Vector2(30.4525, 27.0277)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(4652, 18272)
+scale = Vector2(30.4525, 27.0277)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D13" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(-559, 11223)
+scale = Vector2(30.2621, 58.071)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D14" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(4622, 9991)
+scale = Vector2(30.4525, 27.0277)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D15" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(4593, 12243)
+scale = Vector2(30.4525, 27.0277)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D16" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(4622, 12956)
+scale = Vector2(30.4525, 27.0277)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D17" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(4766, 15137)
+scale = Vector2(30.4525, 27.0277)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(-2248, 14618)
+scale = Vector2(13.3683, 10.2342)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(690, 14578)
+scale = Vector2(13.3683, 10.2342)
+collision_layer = 0
+collision_mask = 0
+
 [node name="Sidewalk" parent="." instance=ExtResource("1_gv1yf")]
 position = Vector2(-40, 2)
 scale = Vector2(5, 5)
@@ -63,97 +193,349 @@ collision_layer = 2
 position = Vector2(110.375, 1890)
 shape = SubResource("RectangleShape2D_migj7")
 
-[node name="Ocean" parent="." instance=ExtResource("4_uwgj8")]
-position = Vector2(2423, 6451)
-scale = Vector2(10, 10)
-
 [node name="Waves" parent="." instance=ExtResource("5_uxi2y")]
 position = Vector2(-1038, 3119)
 scale = Vector2(20, 20)
 
+[node name="Waves2" parent="." instance=ExtResource("5_uxi2y")]
+position = Vector2(-4649, 16524)
+scale = Vector2(10.605, 10.605)
+
 [node name="Node2D" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(79, 17754)
+position = Vector2(-182, 24880)
 scale = Vector2(10, 10)
 
 [node name="Node2D2" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(6000, 17766)
+position = Vector2(5739, 24892)
 scale = Vector2(10, 10)
 
 [node name="Node2D3" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(3693, 20127)
+position = Vector2(3432, 27253)
 scale = Vector2(10, 10)
 
 [node name="Node2D4" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(-228, 20197)
+position = Vector2(76.9995, 27627)
 scale = Vector2(10, 10)
 
 [node name="Node2D5" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(7100, 20127)
+position = Vector2(6839, 27253)
 scale = Vector2(10, 10)
 
 [node name="Node2D6" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(992.001, 22203)
+position = Vector2(731.001, 29329)
 scale = Vector2(10, 10)
 
 [node name="Node2D7" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(5044, 22989)
+position = Vector2(4783, 30115)
 scale = Vector2(10, 10)
 
 [node name="Node2D8" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(22394, 10146)
+position = Vector2(11701, 10565)
 scale = Vector2(10, 10)
 
+[node name="Magmas" type="Node2D" parent="."]
+
+[node name="Magma2" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(8847, -5393)
+scale = Vector2(10, 10)
+
+[node name="Magma3" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-5564, 15141)
+scale = Vector2(10, 10)
+
+[node name="Magma" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-6166, 14209)
+scale = Vector2(10, 10)
+
+[node name="Magma4" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(2390, 11232)
+scale = Vector2(10, 10)
+
+[node name="Magma5" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(2725, 11354)
+scale = Vector2(10, 10)
+
+[node name="Magma6" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(910, 12397)
+scale = Vector2(10, 10)
+
+[node name="Magma7" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(8139, 12408)
+scale = Vector2(10, 10)
+
+[node name="Magma8" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(4495, 13723)
+scale = Vector2(10, 10)
+
+[node name="Magma9" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(1909, 15918)
+scale = Vector2(10, 10)
+
+[node name="Magma10" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(4420, 11420)
+scale = Vector2(10, 10)
+
+[node name="Magma50" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(4329, 11791)
+scale = Vector2(10, 10)
+
+[node name="Magma51" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(4145, 11788)
+scale = Vector2(10, 10)
+
+[node name="Magma11" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(5644, 11628)
+scale = Vector2(10, 10)
+
+[node name="Magma12" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(6853, 12594)
+scale = Vector2(10, 10)
+
+[node name="Magma13" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(8009, 14574)
+scale = Vector2(10, 10)
+
+[node name="Magma14" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-5241, 12426)
+scale = Vector2(10, 10)
+
+[node name="Magma15" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-4905, 13595)
+scale = Vector2(10, 10)
+
+[node name="Magma16" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-4979, 13966)
+scale = Vector2(10, 10)
+
+[node name="Magma17" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-5887, 14060)
+scale = Vector2(10, 10)
+
+[node name="Magma18" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-5356, 13216)
+scale = Vector2(10, 10)
+
+[node name="Magma19" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-4914, 13763)
+scale = Vector2(10, 10)
+
+[node name="Magma20" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-4507, 15457)
+scale = Vector2(10, 10)
+
+[node name="Magma21" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(152, 12569)
+scale = Vector2(10, 10)
+
+[node name="Magma52" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-297, 12665)
+scale = Vector2(10, 10)
+
+[node name="Magma22" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(1304, 11317)
+scale = Vector2(10, 10)
+
+[node name="Magma23" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-2521, 13944)
+scale = Vector2(10, 10)
+
+[node name="Magma24" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-2889, 13988)
+scale = Vector2(10, 10)
+
+[node name="Magma25" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(1624, 10903)
+scale = Vector2(10, 10)
+
+[node name="Magma26" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(3420, 11533)
+scale = Vector2(10, 10)
+
+[node name="Magma27" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(2130, 10307)
+scale = Vector2(-6.76884, 5.84148)
+
+[node name="Magma28" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-7659, 14580)
+scale = Vector2(10, 10)
+
+[node name="Magma29" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-6979, 14167)
+scale = Vector2(10, 10)
+
+[node name="Magma30" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(6342, 11565)
+scale = Vector2(10, 10)
+
+[node name="Magma31" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(3041, 11501)
+scale = Vector2(10, 10)
+
+[node name="Magma32" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(4532, 16035)
+scale = Vector2(10, 10)
+
+[node name="Magma33" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(4042, 15772)
+scale = Vector2(10, 10)
+
+[node name="Magma34" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(4724, 14792)
+scale = Vector2(10, 10)
+
+[node name="Magma35" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(3362, 11151)
+scale = Vector2(10, 5.48)
+
+[node name="Magma36" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(7211, 14060)
+scale = Vector2(10, 10)
+
+[node name="Magma37" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(7466, 13795)
+scale = Vector2(10, 10)
+
+[node name="Magma38" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-5205, 13414)
+scale = Vector2(10, 10)
+
+[node name="Magma39" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-4965, 13544)
+scale = Vector2(10, 10)
+
+[node name="Magma40" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-5376, 12270)
+scale = Vector2(10, 10)
+
+[node name="Magma41" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-3303, 18309)
+scale = Vector2(10, 10)
+
+[node name="Magma42" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-5116, 13468)
+scale = Vector2(10, 10)
+
+[node name="Magma43" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-5038, 12316)
+scale = Vector2(10, 10)
+
+[node name="Magma44" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(508, 12461)
+scale = Vector2(10, 10)
+
+[node name="Magma45" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-4698, 14909)
+scale = Vector2(10, 10)
+
+[node name="Magma46" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-494, 12802)
+scale = Vector2(10, 10)
+
+[node name="Magma53" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(-854, 12946)
+scale = Vector2(10, 10)
+
+[node name="Magma47" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(6039, 11528)
+scale = Vector2(10, 10)
+
+[node name="Magma48" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(1238, 13763)
+scale = Vector2(10, 10)
+
+[node name="Magma49" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(1902, 10558)
+scale = Vector2(7.865, 7.865)
+
 [node name="Node2D9" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(26546, 10811)
+position = Vector2(5387, -3664)
 scale = Vector2(10, 10)
 
 [node name="Node2D12" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(22595, 16235)
+position = Vector2(11691, 17842)
 scale = Vector2(10, 10)
 
 [node name="Node2D13" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(26814, 16954)
+position = Vector2(11707, 4205)
 rotation = -0.416106
 scale = Vector2(10, 10)
 
 [node name="Node2D14" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(21636, 18824)
+position = Vector2(11019, 23999)
 rotation = -0.416106
 scale = Vector2(10, 10)
 
 [node name="Node2D15" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(24129, 19927)
+position = Vector2(10639, 20546)
 rotation = -0.416106
 scale = Vector2(10, 10)
 
 [node name="Node2D16" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(28176, 19806)
+position = Vector2(10290, 854.002)
 rotation = -0.416106
 scale = Vector2(10, 10)
 
 [node name="Node2D17" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(30226, 21981)
+position = Vector2(8783, -2545)
 rotation = -0.416106
 scale = Vector2(10, 10)
 
 [node name="Node2D10" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(22572, 12709)
+position = Vector2(11695, 14251)
 scale = Vector2(10, 10)
 
 [node name="Node2D11" parent="." instance=ExtResource("6_elo76")]
-position = Vector2(26393, 14162)
+position = Vector2(11770, 7208)
 scale = Vector2(10, 10)
+
+[node name="Node2D18" type="Node2D" parent="."]
+position = Vector2(-4096, 12824)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish118" parent="." instance=ExtResource("10_27vmg")]
+position = Vector2(-994, 11536)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish119" parent="." instance=ExtResource("10_27vmg")]
+position = Vector2(-1452, 11756)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish120" parent="." instance=ExtResource("10_27vmg")]
+position = Vector2(-1791, 11942)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish121" parent="." instance=ExtResource("10_27vmg")]
+position = Vector2(-1994, 12247)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish122" parent="." instance=ExtResource("10_27vmg")]
+position = Vector2(-3188, 11536)
+rotation = -1.5708
+scale = Vector2(40, 40)
 
 [node name="Sun" parent="." instance=ExtResource("6_0bccq")]
 position = Vector2(-162, -319)
 scale = Vector2(5, 5)
 
 [node name="Sun2" parent="." instance=ExtResource("6_0bccq")]
-position = Vector2(4275, 20689)
+position = Vector2(2248, 22578)
 scale = Vector2(50, 50)
 
+[node name="Sun3" parent="." instance=ExtResource("6_0bccq")]
+position = Vector2(10486, 12463)
+scale = Vector2(15.3645, 15.952)
+
+[node name="Grass" parent="Sun3" instance=ExtResource("12_iorqp")]
+position = Vector2(82.6583, 211.071)
+scale = Vector2(0.643726, 1.14787)
+skew = -0.574213
+
 [node name="Sand" parent="." instance=ExtResource("9_a1kw2")]
-position = Vector2(3475, 9765)
+position = Vector2(-2687, 9970)
+scale = Vector2(10, 10)
+
+[node name="Sand2" parent="." instance=ExtResource("9_a1kw2")]
+position = Vector2(8761, 9874)
 scale = Vector2(10, 10)
 
 [node name="Lil Guy" parent="." instance=ExtResource("1_ka5v4")]
@@ -166,69 +548,652 @@ collision_mask = 14
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Weird Fish" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(1570, 6471)
+position = Vector2(2884, 6649)
+rotation = -1.05592
 scale = Vector2(40, 40)
 
 [node name="Weird Fish2" parent="Enemies" instance=ExtResource("10_27vmg")]
 position = Vector2(2403, 7219)
+rotation = -1.24791
 scale = Vector2(40, 40)
 
 [node name="Weird Fish3" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(823, 7721)
+position = Vector2(1832, 7390)
+rotation = -1.53414
 scale = Vector2(40, 40)
 
 [node name="Weird Fish4" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(2905, 5852)
+position = Vector2(1829, 5327)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish5" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(406, 5916)
+position = Vector2(601, 5145)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish6" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(3791, 7550)
+position = Vector2(7962, 20353)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish8" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(4236, 6433)
+position = Vector2(3405, 6365)
+rotation = -0.767945
 scale = Vector2(40, 40)
 
 [node name="Weird Fish11" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(-741.999, 7017)
+position = Vector2(349, 8018)
+rotation = -2.78205
 scale = Vector2(40, 40)
 
 [node name="Weird Fish12" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(-679, 5772)
+position = Vector2(1053, 8857)
+rotation = 2.97404
 scale = Vector2(40, 40)
 
 [node name="Weird Fish13" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(-971, 4896)
+position = Vector2(2550, 8614)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish9" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(4083, 5404)
+position = Vector2(2422, 5768)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish14" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(5089, 4686)
+position = Vector2(3936, 5330)
+rotation = -0.959931
 scale = Vector2(40, 40)
 
 [node name="Weird Fish15" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(5376, 5782)
+position = Vector2(3698, 5841)
+rotation = -0.959931
 scale = Vector2(40, 40)
 
 [node name="Weird Fish16" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(6256, 6734)
+position = Vector2(5402, 7623)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish18" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4702, 7589)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish19" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4659, 6976)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish20" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4673, 6463)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish21" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4673, 6007)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish22" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4659, 5480)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish23" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4645, 4853)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish24" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4602, 4240)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish35" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(7097, 8296)
+rotation = -0.0959931
+scale = Vector2(40, 40)
+
+[node name="Weird Fish36" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6397, 8262)
+rotation = -0.0959931
+scale = Vector2(40, 40)
+
+[node name="Weird Fish37" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2660, 8349)
+rotation = 1.53414
+scale = Vector2(40, 40)
+
+[node name="Weird Fish38" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2646, 7836)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish39" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2646, 7380)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish40" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2660, 6853)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish41" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2674, 6226)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish42" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2717, 5613)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish43" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-1944, 8108)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish44" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2644, 8074)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish45" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2687, 7461)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish46" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2673, 6948)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish47" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2673, 6492)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish48" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2687, 5965)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish49" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2701, 5338)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish50" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6270, 4025)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish51" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-1944, 8108)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish52" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2644, 8074)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish53" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2687, 7461)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish54" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2673, 6948)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish55" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2673, 6492)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish56" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2687, 5965)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish57" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2701, 5338)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish59" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2660, 8349)
+rotation = 1.53414
+scale = Vector2(40, 40)
+
+[node name="Weird Fish60" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2646, 7836)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish61" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2646, 7380)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish62" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2660, 6853)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish63" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2674, 6226)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish64" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2717, 5613)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish65" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-1944, 8108)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish66" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2644, 8074)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish67" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2687, 7461)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish68" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2673, 6948)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish69" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2673, 6492)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish70" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2687, 5965)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish71" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2701, 5338)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish72" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-1944, 8108)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish73" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2644, 8074)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish74" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2687, 7461)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish75" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2673, 6948)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish76" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2673, 6492)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish77" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2687, 5965)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish78" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2701, 5338)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish79" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2741, 6788)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish80" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2727, 6275)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish81" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2727, 5819)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish82" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2741, 5292)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish83" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2755, 4665)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish84" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2798, 4052)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish85" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2025, 6547)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish86" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2725, 6513)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish87" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2768, 5900)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish88" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2754, 5387)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish89" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2754, 4931)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish90" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2768, 4404)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish91" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2782, 3777)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish92" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2025, 6547)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish124" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(1167, 3414)
+rotation = 3.16428
+scale = Vector2(33.945, 33.945)
+
+[node name="Weird Fish93" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2725, 6513)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish94" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2768, 5900)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish95" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2754, 5387)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish96" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2754, 4931)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish97" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2768, 4404)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish98" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-2782, 3777)
+rotation = 3.16428
+scale = Vector2(40, 40)
+
+[node name="Weird Fish58" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6270, 4025)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish27" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-478, 4303)
+rotation = 3.83623
+scale = Vector2(40, 40)
+
+[node name="Weird Fish28" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-321, 8236)
+rotation = 3.83623
+scale = Vector2(40, 40)
+
+[node name="Weird Fish29" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-271, 7687)
+rotation = 3.83623
+scale = Vector2(40, 40)
+
+[node name="Weird Fish30" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-350, 7110)
+rotation = 3.83623
+scale = Vector2(40, 40)
+
+[node name="Weird Fish31" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-350, 6654)
+rotation = 3.83623
+scale = Vector2(40, 40)
+
+[node name="Weird Fish32" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-364, 6127)
+rotation = 3.83623
+scale = Vector2(40, 40)
+
+[node name="Weird Fish33" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-378, 5500)
+rotation = 3.83623
+scale = Vector2(40, 40)
+
+[node name="Weird Fish34" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-421, 4887)
+rotation = 3.83623
+scale = Vector2(40, 40)
+
+[node name="Weird Fish25" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4588, 4083)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish26" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4588, 4083)
+rotation = -0.767945
+scale = Vector2(40, 40)
+
+[node name="Weird Fish99" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(7132, 7815)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish100" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6432, 7781)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish101" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6389, 7168)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish102" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6403, 6655)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish103" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6403, 6199)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish104" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6389, 5672)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish105" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6375, 5045)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish106" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6332, 4432)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish107" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6318, 4275)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish108" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(7474, 7388)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish109" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6774, 7354)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish110" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6731, 6741)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish111" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6745, 6228)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish112" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6745, 5772)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish113" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6731, 5245)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish114" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6717, 4618)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish115" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6674, 4005)
+rotation = -0.575959
+scale = Vector2(40, 40)
+
+[node name="Weird Fish116" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(6660, 3848)
+rotation = -0.575959
 scale = Vector2(40, 40)
 
 [node name="Weird Fish17" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(5520, 7883)
+position = Vector2(2871, 10441)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish118" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(2220, 10672)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish10" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(5137, 6928)
+position = Vector2(2931, 18099)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish117" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(3849, 10218)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish122" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4823, 9545)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish123" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4783, 9338)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish120" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4787, 9751)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish121" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(4792, 9953)
+scale = Vector2(40, 40)
+
+[node name="Weird Fish119" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(1574, 10731)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish7" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(1239, 5127)
+position = Vector2(1222, 5237)
 scale = Vector2(40, 40)
+
+[node name="Grass" parent="." instance=ExtResource("12_iorqp")]
+position = Vector2(1906, 19916)
+rotation = -3.16603
+scale = Vector2(20, 20)
+
+[node name="SkySprite8" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(10790, 5778)
+rotation = -0.767945
+scale = Vector2(1.34474, 9.82384)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(9576, 2682)
+scale = Vector2(6.45727, 20.9214)
+collision_layer = 0
+collision_mask = 0
+
+[node name="SkySprite9" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(10790, 5778)
+rotation = -0.767945
+scale = Vector2(1.34474, 9.82384)
+
+[node name="Sidewalk3" parent="." instance=ExtResource("1_gv1yf")]
+position = Vector2(10654, -440)
+rotation = -2.92517
+scale = Vector2(5, 5)
+
+[node name="Sand disappearance area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sand disappearance area"]
+position = Vector2(1936.5, 8632.88)
+shape = SubResource("RectangleShape2D_mbjlq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(13033, 14007)
+rotation = -1.34216
+scale = Vector2(31.6437, 23.6856)
+skew = 0.455531
+texture = ExtResource("13_eak1k")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(-141.646, -113.599)
+rotation = 1.05592
+texture = ExtResource("14_yqukb")
+
+[connection signal="body_entered" from="Sand disappearance area" to="Waves" method="_on_sand_disappearance_area_body_entered"]

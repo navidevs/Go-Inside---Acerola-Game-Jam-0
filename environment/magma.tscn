@@ -1,7 +1,19 @@
-[gd_scene format=3 uid="uid://daomj3h0lp5g8"]
+[gd_scene load_steps=3 format=3 uid="uid://daomj3h0lp5g8"]
 
-[node name="Magma" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://dxcembf622l2k" path="res://sprites/environment/magma6.png" id="1_ctqi4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m76am"]
+size = Vector2(32, 1)
+
+[node name="Magma" type="CharacterBody2D"]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -191.5)
+shape = SubResource("RectangleShape2D_m76am")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("1_ctqi4")
+region_enabled = true
+region_rect = Rect2(0, -176, 32, 384)
