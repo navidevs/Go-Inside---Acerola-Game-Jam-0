@@ -1,8 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://d0v1rp135356r"]
+[gd_scene load_steps=21 format=3 uid="uid://d0v1rp135356r"]
 
 [ext_resource type="PackedScene" uid="uid://dhma5dt5vlstf" path="res://environment/sidewalk.tscn" id="1_gv1yf"]
 [ext_resource type="PackedScene" uid="uid://ihxqpms2ofcr" path="res://characters/lil_guy.tscn" id="1_ka5v4"]
 [ext_resource type="PackedScene" uid="uid://6sm41uyny54w" path="res://environment/cloudysky.tscn" id="1_n86oc"]
+[ext_resource type="Script" path="res://level.gd" id="1_tjtwk"]
 [ext_resource type="PackedScene" uid="uid://cn6frtsqk7lsg" path="res://environment/ground1.tscn" id="2_kwdj2"]
 [ext_resource type="PackedScene" uid="uid://b48ke1nnjoa71" path="res://ocean.tscn" id="4_uwgj8"]
 [ext_resource type="PackedScene" uid="uid://dyd5lfi3lne83" path="res://environment/waves.tscn" id="5_uxi2y"]
@@ -18,10 +19,23 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_migj7"]
 size = Vector2(2879.25, 202.5)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qdfc4"]
+size = Vector2(50.14, 0.620007)
+
+[sub_resource type="Curve2D" id="Curve2D_7a6hs"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -29.6258, 14.4742, 0, 0, 0, 0, -2.74578, 58.8743, 0, 0, 0, 0, 30.1742, 80.9142, 0, 0, 0, 0, 64.6142, 87.8542, 0, 0, 0, 0, 107.194, 83.3343, 0, 0, 0, 0, 139.814, 74.8743, 0, 0, 0, 0, 157.334, 61.8943, 0, 0, 0, 0, 164.894, 49.1942, 0, 0, 0, 0, 170.314, 27.7542, 0, 0, 0, 0, 176.054, 11.1342, 0, 0, 0, 0, 187.834, 0.274261, 0, 0, 0, 0, 202.334, -9.70575, 0, 0, 0, 0, 221.074, -19.9657, 0, 0, 0, 0, 231.634, -37.1857, 0, 0, 0, 0, 236.474, -57.7257, 0, 0, 0, 0, 240.094, -96.6857, 0, 0, 0, 0, 239.494, -115.406, 0, 0, 0, 0, 247.034, -168.266, 0, 0, 0, 0, 255.794, -183.066, 0, 0, 0, 0, 267.654, -217.566, 0, 0, 0, 0, 242.094, -215.986, 0, 0, 0, 0, 266.974, -245.586, 0, 0, 0, 0, 265.474, -288.486, 0, 0, 0, 0, 263.354, -336.506, 0, 0, 0, 0, 253.694, -391.166, 0, 0, 0, 0, 244.314, -402.646, 0, 0, 0, 0, 234.654, -407.486, 0, 0, 0, 0, 216.834, -412.006, 0, 0, 0, 0, 203.854, -413.526, 0, 0, 0, 0, 178.774, -419.266, 0, 0, 0, 0, 165.494, -428.326, 0, 0, 0, 0, 144.954, -441.926, 0, 0, 0, 0, 121.094, -449.466, 0, 0, 0, 0, 105.694, -457.926, 0, 0, 0, 0, 96.6342, -470.306, 0, 0, 0, 0, 86.9542, -477.566, 0, 0, 0, 0, 76.9942, -466.386, 0, 0, 0, 0, 66.1142, -454.906, 0, 0, 0, 0, 67.6342, -445.246, 0, 0, 0, 0, 66.4142, -432.546, 0, 0, 0, 0, 67.6342, -426.206)
+}
+point_count = 41
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mbjlq"]
 size = Vector2(169, 297.75)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3o55m"]
+size = Vector2(144, 51.8599)
+
 [node name="Level" type="Node2D"]
+script = ExtResource("1_tjtwk")
 
 [node name="SkySprite1" parent="." instance=ExtResource("1_n86oc")]
 position = Vector2(654, 2580)
@@ -63,6 +77,14 @@ scale = Vector2(10, 10)
 position = Vector2(4795, 22229)
 scale = Vector2(10, 10)
 
+[node name="Sprite2D9" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(-6926, 22116)
+scale = Vector2(10, 10)
+
+[node name="Sprite2D10" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(-6971, 20487)
+scale = Vector2(10, 10)
+
 [node name="SkySprite6" parent="." instance=ExtResource("1_n86oc")]
 position = Vector2(291, 19811)
 scale = Vector2(10, 10)
@@ -74,6 +96,7 @@ scale = Vector2(10, 10)
 [node name="SkySprite7" parent="." instance=ExtResource("1_n86oc")]
 position = Vector2(351, 20959)
 scale = Vector2(10, 10)
+metadata/_edit_lock_ = true
 
 [node name="Sprite2D8" parent="." instance=ExtResource("1_n86oc")]
 position = Vector2(4311, 20961)
@@ -118,6 +141,12 @@ scale = Vector2(30.2621, 58.071)
 collision_layer = 0
 collision_mask = 0
 
+[node name="StaticBody2D18" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(-6435, 16494)
+scale = Vector2(30.2621, 58.071)
+collision_layer = 0
+collision_mask = 0
+
 [node name="StaticBody2D7" parent="." instance=ExtResource("2_kwdj2")]
 position = Vector2(2263, 12918)
 scale = Vector2(30.4525, 27.0277)
@@ -138,6 +167,12 @@ collision_mask = 0
 
 [node name="StaticBody2D13" parent="." instance=ExtResource("2_kwdj2")]
 position = Vector2(-559, 11223)
+scale = Vector2(30.2621, 58.071)
+collision_layer = 0
+collision_mask = 0
+
+[node name="StaticBody2D19" parent="." instance=ExtResource("2_kwdj2")]
+position = Vector2(-6442, 11585)
 scale = Vector2(30.2621, 58.071)
 collision_layer = 0
 collision_mask = 0
@@ -205,6 +240,18 @@ scale = Vector2(10.605, 10.605)
 position = Vector2(-182, 24880)
 scale = Vector2(10, 10)
 
+[node name="Node2D35" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(-6088, 24857)
+scale = Vector2(10, 10)
+
+[node name="Node2D37" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(-11858, 24925)
+scale = Vector2(10, 10)
+
+[node name="Node2D36" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(-5884, 28523)
+scale = Vector2(10, 10)
+
 [node name="Node2D2" parent="." instance=ExtResource("6_elo76")]
 position = Vector2(5739, 24892)
 scale = Vector2(10, 10)
@@ -236,8 +283,8 @@ scale = Vector2(10, 10)
 [node name="Magmas" type="Node2D" parent="."]
 
 [node name="Magma2" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(8847, -5393)
-scale = Vector2(10, 10)
+position = Vector2(8864, -3579)
+scale = Vector2(120, 10)
 
 [node name="Magma3" parent="Magmas" instance=ExtResource("7_qcc8w")]
 position = Vector2(-5564, 15141)
@@ -332,7 +379,7 @@ position = Vector2(-297, 12665)
 scale = Vector2(10, 10)
 
 [node name="Magma22" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(1304, 11317)
+position = Vector2(1447, 11321)
 scale = Vector2(10, 10)
 
 [node name="Magma23" parent="Magmas" instance=ExtResource("7_qcc8w")]
@@ -451,6 +498,62 @@ scale = Vector2(7.865, 7.865)
 position = Vector2(5387, -3664)
 scale = Vector2(10, 10)
 
+[node name="Node2D19" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(997, -4529)
+scale = Vector2(10, 10)
+
+[node name="Node2D20" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(6252, -7326)
+scale = Vector2(10, 10)
+
+[node name="Node2D34" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(1044, -8116)
+scale = Vector2(10, 10)
+
+[node name="Node2D21" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(10236, -7309)
+scale = Vector2(10, 10)
+
+[node name="Node2D22" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(13728, -3631)
+scale = Vector2(10, 10)
+
+[node name="Node2D23" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(14169, -614)
+scale = Vector2(10, 10)
+
+[node name="Node2D24" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(14661, 2302)
+scale = Vector2(10, 10)
+
+[node name="Node2D25" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(15034, 4489)
+scale = Vector2(10, 10)
+
+[node name="Node2D26" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(15339, 7795)
+scale = Vector2(10, 10)
+
+[node name="Node2D27" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(15509, 11033)
+scale = Vector2(10, 10)
+
+[node name="Node2D28" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(16018, 14593)
+scale = Vector2(10, 10)
+
+[node name="Node2D29" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(16272, 17814)
+scale = Vector2(10, 10)
+
+[node name="Node2D30" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(16306, 20679)
+scale = Vector2(10, 10)
+
+[node name="Node2D31" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(15871, 23213)
+scale = Vector2(10, 10)
+
 [node name="Node2D12" parent="." instance=ExtResource("6_elo76")]
 position = Vector2(11691, 17842)
 scale = Vector2(10, 10)
@@ -488,6 +591,14 @@ scale = Vector2(10, 10)
 position = Vector2(11770, 7208)
 scale = Vector2(10, 10)
 
+[node name="Node2D32" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(10441, 7030)
+scale = Vector2(10, 10)
+
+[node name="Node2D33" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(9809, 5308)
+scale = Vector2(10, 10)
+
 [node name="Node2D18" type="Node2D" parent="."]
 position = Vector2(-4096, 12824)
 scale = Vector2(40, 40)
@@ -518,8 +629,40 @@ position = Vector2(-162, -319)
 scale = Vector2(5, 5)
 
 [node name="Sun2" parent="." instance=ExtResource("6_0bccq")]
-position = Vector2(2248, 22578)
+position = Vector2(2319, -251)
+rotation = 1.5708
+scale = Vector2(10, 10)
+
+[node name="SunMovementTrigger" type="Area2D" parent="."]
+position = Vector2(-560.711, 21328.3)
 scale = Vector2(50, 50)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SunMovementTrigger"]
+position = Vector2(-27.7558, 2.30426)
+shape = SubResource("RectangleShape2D_qdfc4")
+
+[node name="OceanFloorMarker" type="Marker2D" parent="."]
+position = Vector2(1907, 8312)
+scale = Vector2(50, 50)
+
+[node name="MovingSunMarker" type="Marker2D" parent="."]
+position = Vector2(-2000.15, 21314)
+scale = Vector2(50, 50)
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(-560.711, 21328.3)
+scale = Vector2(50, 50)
+curve = SubResource("Curve2D_7a6hs")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(-29.6258, 14.4742)
+rotation = 1.02641
+rotates = false
+
+[node name="Sun2" parent="Path2D/PathFollow2D" instance=ExtResource("6_0bccq")]
+rotation = -1.02641
+scale = Vector2(0.63, 0.63)
 
 [node name="Sun3" parent="." instance=ExtResource("6_0bccq")]
 position = Vector2(10486, 12463)
@@ -571,7 +714,8 @@ position = Vector2(601, 5145)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish6" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(7962, 20353)
+position = Vector2(12523, 18707)
+rotation = 1.43815
 scale = Vector2(40, 40)
 
 [node name="Weird Fish8" parent="Enemies" instance=ExtResource("10_27vmg")]
@@ -937,6 +1081,11 @@ position = Vector2(1167, 3414)
 rotation = 3.16428
 scale = Vector2(33.945, 33.945)
 
+[node name="Weird Fish126" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-510, 1634)
+rotation = 3.14159
+scale = Vector2(19.67, 19.67)
+
 [node name="Weird Fish93" parent="Enemies" instance=ExtResource("10_27vmg")]
 position = Vector2(-2725, 6513)
 rotation = 3.16428
@@ -966,6 +1115,11 @@ scale = Vector2(40, 40)
 position = Vector2(-2782, 3777)
 rotation = 3.16428
 scale = Vector2(40, 40)
+
+[node name="Weird Fish125" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(2281, -259)
+rotation = 3.16428
+scale = Vector2(16.345, 16.345)
 
 [node name="Weird Fish58" parent="Enemies" instance=ExtResource("10_27vmg")]
 position = Vector2(6270, 4025)
@@ -1121,7 +1275,8 @@ position = Vector2(2220, 10672)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish10" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(2931, 18099)
+position = Vector2(-2267, 17348)
+rotation = -1.5708
 scale = Vector2(40, 40)
 
 [node name="Weird Fish117" parent="Enemies" instance=ExtResource("10_27vmg")]
@@ -1157,26 +1312,23 @@ position = Vector2(1906, 19916)
 rotation = -3.16603
 scale = Vector2(20, 20)
 
-[node name="SkySprite8" parent="." instance=ExtResource("1_n86oc")]
-position = Vector2(10790, 5778)
-rotation = -0.767945
-scale = Vector2(1.34474, 9.82384)
-
 [node name="StaticBody2D12" parent="." instance=ExtResource("2_kwdj2")]
-position = Vector2(9576, 2682)
+position = Vector2(10756, 3348)
 scale = Vector2(6.45727, 20.9214)
 collision_layer = 0
 collision_mask = 0
 
 [node name="SkySprite9" parent="." instance=ExtResource("1_n86oc")]
-position = Vector2(10790, 5778)
+position = Vector2(14671, 6691)
 rotation = -0.767945
 scale = Vector2(1.34474, 9.82384)
 
 [node name="Sidewalk3" parent="." instance=ExtResource("1_gv1yf")]
-position = Vector2(10654, -440)
-rotation = -2.92517
+position = Vector2(10140, -1660)
+rotation = -4.23242
 scale = Vector2(5, 5)
+collision_layer = 0
+collision_mask = 0
 
 [node name="Sand disappearance area" type="Area2D" parent="."]
 
@@ -1192,8 +1344,17 @@ skew = 0.455531
 texture = ExtResource("13_eak1k")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
-position = Vector2(-141.646, -113.599)
+position = Vector2(-134.413, -96.7029)
 rotation = 1.05592
 texture = ExtResource("14_yqukb")
 
-[connection signal="body_entered" from="Sand disappearance area" to="Waves" method="_on_sand_disappearance_area_body_entered"]
+[node name="HouseGround" type="StaticBody2D" parent="."]
+position = Vector2(3617.79, 42.8599)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HouseGround"]
+position = Vector2(14.209, -16.36)
+shape = SubResource("RectangleShape2D_3o55m")
+
+[connection signal="body_entered" from="SunMovementTrigger" to="." method="_on_sun_movement_trigger_body_entered"]
+[connection signal="body_entered" from="Sand disappearance area" to="." method="_on_sand_disappearance_area_body_entered"]

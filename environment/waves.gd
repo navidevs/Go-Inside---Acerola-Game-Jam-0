@@ -1,9 +1,9 @@
 extends Node2D
 var rotation_speed = 1
-var split_speed = 200
+
 var has_entered_tilt_point = false
 var has_entered_split_point = false
-
+var has_landed_on_sun = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -14,10 +14,9 @@ func _process(delta):
 	if has_entered_tilt_point:
 		##rotate the wave
 		$CharacterBody2D.rotation += rotation_speed * delta
-	if has_entered_split_point:
-		##split the sand
-		$"../Sand".position.x -= split_speed * delta
-		$"../Sand2".position.x += split_speed * delta
+
+	#if has_landed_on_sun:
+		
 
 
 func _on_tilt_point_body_entered(body):
@@ -26,6 +25,6 @@ func _on_tilt_point_body_entered(body):
 	
 
 
-func _on_sand_disappearance_area_body_entered(body):
-	has_entered_split_point = true
+
+
 
