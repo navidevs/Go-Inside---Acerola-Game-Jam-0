@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgklsbp0esx62"]
+
+[ext_resource type="Script" path="res://game_over.gd" id="1_jsuyc"]
+[ext_resource type="FontFile" uid="uid://d3j6qe6quul3r" path="res://fonts/PressStart2P-vaV7.ttf" id="1_lm0mo"]
+
+[sub_resource type="Theme" id="Theme_m2o2f"]
+default_font = ExtResource("1_lm0mo")
+default_font_size = 40
+
+[node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_jsuyc")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -1285.0
+offset_top = -871.0
+offset_right = 2160.0
+offset_bottom = 1535.0
+color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -569.0
+offset_top = -211.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_m2o2f")
+text = "GAME OVER
+
+
+Press ENTER to Restart
+
+
+Press ESC to Exit to
+
+Title Screen"
+horizontal_alignment = 1

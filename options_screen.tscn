@@ -1,0 +1,119 @@
+[gd_scene load_steps=7 format=3 uid="uid://bixhaeblm4dfm"]
+
+[ext_resource type="Script" path="res://options_screen.gd" id="1_javgd"]
+[ext_resource type="Texture2D" uid="uid://f5rr88y3dg2u" path="res://sprites/lil guy title standing.png" id="1_nvi6b"]
+[ext_resource type="Texture2D" uid="uid://cji8hasvwh71y" path="res://sprites/lil guy title walking.png" id="2_e1dp0"]
+[ext_resource type="FontFile" uid="uid://d3j6qe6quul3r" path="res://fonts/PressStart2P-vaV7.ttf" id="3_q32gt"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_1ii5v"]
+frames = 2
+frame_0/texture = ExtResource("1_nvi6b")
+frame_0/duration = 0.25
+frame_1/texture = ExtResource("2_e1dp0")
+frame_1/duration = 0.25
+
+[sub_resource type="Theme" id="Theme_txsjf"]
+default_font = ExtResource("3_q32gt")
+default_font_size = 40
+
+[node name="OptionsScreen" type="CanvasLayer"]
+script = ExtResource("1_javgd")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -271.0
+offset_top = -225.0
+offset_right = -226.0
+offset_bottom = -137.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.448
+anchor_right = 0.5
+anchor_bottom = 0.448
+offset_left = -1015.5
+offset_top = -565.424
+offset_right = 1583.5
+offset_bottom = 934.576
+color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control" parent="Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 2.0
+offset_top = -19.5
+offset_right = 591.0
+offset_bottom = 401.5
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -142.0
+offset_top = -80.0
+offset_right = 142.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel/Control/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="SoundToggleSelection" type="TextureRect" parent="Panel/Control/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = SubResource("AnimatedTexture_1ii5v")
+
+[node name="FullscreenToggleSelection" type="TextureRect" parent="Panel/Control/HBoxContainer/VBoxContainer2"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = SubResource("AnimatedTexture_1ii5v")
+
+[node name="ReturnSelect" type="TextureRect" parent="Panel/Control/HBoxContainer/VBoxContainer2"]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = SubResource("AnimatedTexture_1ii5v")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 20
+
+[node name="SoundToggle" type="Label" parent="Panel/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_txsjf")
+text = "Sound:On"
+
+[node name="FullscreenToggle" type="Label" parent="Panel/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_txsjf")
+text = "Fullscreen:On"
+
+[node name="ReturnLabel" type="Label" parent="Panel/Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_txsjf")
+text = "Return to Title"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://d0v1rp135356r"]
+[gd_scene load_steps=24 format=3 uid="uid://d0v1rp135356r"]
 
 [ext_resource type="PackedScene" uid="uid://dhma5dt5vlstf" path="res://environment/sidewalk.tscn" id="1_gv1yf"]
 [ext_resource type="PackedScene" uid="uid://ihxqpms2ofcr" path="res://characters/lil_guy.tscn" id="1_ka5v4"]
@@ -34,6 +34,15 @@ size = Vector2(169, 297.75)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3o55m"]
 size = Vector2(144, 51.8599)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k062b"]
+size = Vector2(29, 215)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7fjqv"]
+size = Vector2(37322, 484)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h56yw"]
+size = Vector2(1066, 46425.8)
+
 [node name="Level" type="Node2D"]
 script = ExtResource("1_tjtwk")
 
@@ -60,9 +69,18 @@ scale = Vector2(10, 10)
 [node name="Sprite2D4" parent="." instance=ExtResource("1_n86oc")]
 position = Vector2(4030, -543)
 scale = Vector2(10, 10)
+metadata/_edit_lock_ = true
 
 [node name="SkySprite4" parent="." instance=ExtResource("1_n86oc")]
 position = Vector2(50, -1815)
+scale = Vector2(10, 10)
+
+[node name="SkySprite10" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(-7126, 449)
+scale = Vector2(10, 10)
+
+[node name="SkySprite11" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(-7181, -1259)
 scale = Vector2(10, 10)
 
 [node name="Sprite2D5" parent="." instance=ExtResource("1_n86oc")]
@@ -102,8 +120,24 @@ metadata/_edit_lock_ = true
 position = Vector2(4311, 20961)
 scale = Vector2(10, 10)
 
+[node name="SkySprite8" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(-7146, 2687)
+scale = Vector2(10, 10)
+
+[node name="SkySprite12" parent="." instance=ExtResource("1_n86oc")]
+position = Vector2(-7162, 1439)
+scale = Vector2(10, 10)
+
 [node name="Ocean" parent="." instance=ExtResource("4_uwgj8")]
 position = Vector2(1906, 6432)
+scale = Vector2(10, 10)
+
+[node name="Ocean4" parent="." instance=ExtResource("4_uwgj8")]
+position = Vector2(-6771, 6432)
+scale = Vector2(10, 10)
+
+[node name="Ocean3" parent="." instance=ExtResource("4_uwgj8")]
+position = Vector2(5184, 6432)
 scale = Vector2(10, 10)
 
 [node name="Ocean2" parent="." instance=ExtResource("4_uwgj8")]
@@ -112,19 +146,19 @@ scale = Vector2(10, 10)
 metadata/_edit_lock_ = true
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_kwdj2")]
-position = Vector2(-22, 387)
+position = Vector2(-18, 390)
 scale = Vector2(13.3683, 10.2342)
 collision_layer = 0
 collision_mask = 0
 
 [node name="StaticBody2D3" parent="." instance=ExtResource("2_kwdj2")]
-position = Vector2(-22, 1278)
+position = Vector2(-18, 1255)
 scale = Vector2(13.3683, 10.2342)
 collision_layer = 0
 collision_mask = 0
 
 [node name="StaticBody2D4" parent="." instance=ExtResource("2_kwdj2")]
-position = Vector2(2469, 1278)
+position = Vector2(2472, 1253)
 scale = Vector2(13.3683, 10.2342)
 collision_layer = 0
 collision_mask = 0
@@ -248,6 +282,10 @@ scale = Vector2(10, 10)
 position = Vector2(-11858, 24925)
 scale = Vector2(10, 10)
 
+[node name="Node2D38" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(-11632, 28500)
+scale = Vector2(10, 10)
+
 [node name="Node2D36" parent="." instance=ExtResource("6_elo76")]
 position = Vector2(-5884, 28523)
 scale = Vector2(10, 10)
@@ -276,6 +314,46 @@ scale = Vector2(10, 10)
 position = Vector2(4783, 30115)
 scale = Vector2(10, 10)
 
+[node name="Node2D39" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(15160, 30714)
+scale = Vector2(25.0124, 30.7866)
+
+[node name="Node2D42" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(25750, 19581)
+scale = Vector2(25.0124, 30.7866)
+
+[node name="Node2D43" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(25478, 8539)
+scale = Vector2(25.0124, 30.7866)
+
+[node name="Node2D44" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(23894, -2458)
+scale = Vector2(25.0124, 30.7866)
+
+[node name="Node2D45" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(19006, -11237)
+scale = Vector2(25.0124, 30.7866)
+
+[node name="Node2D46" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(7285, -13500)
+scale = Vector2(25.0124, 30.7866)
+
+[node name="Node2D47" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(-1947, -13998)
+scale = Vector2(25.0124, 30.7866)
+
+[node name="Node2D48" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(-5070, -7481)
+scale = Vector2(25.0124, 30.7866)
+
+[node name="Node2D40" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(513.999, 35054)
+scale = Vector2(25.0124, 30.7866)
+
+[node name="Node2D41" parent="." instance=ExtResource("6_elo76")]
+position = Vector2(-7046, 35359)
+scale = Vector2(25.0124, 30.7866)
+
 [node name="Node2D8" parent="." instance=ExtResource("6_elo76")]
 position = Vector2(11701, 10565)
 scale = Vector2(10, 10)
@@ -285,14 +363,6 @@ scale = Vector2(10, 10)
 [node name="Magma2" parent="Magmas" instance=ExtResource("7_qcc8w")]
 position = Vector2(8864, -3579)
 scale = Vector2(120, 10)
-
-[node name="Magma3" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-5564, 15141)
-scale = Vector2(10, 10)
-
-[node name="Magma" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-6166, 14209)
-scale = Vector2(10, 10)
 
 [node name="Magma4" parent="Magmas" instance=ExtResource("7_qcc8w")]
 position = Vector2(2390, 11232)
@@ -342,34 +412,6 @@ scale = Vector2(10, 10)
 position = Vector2(8009, 14574)
 scale = Vector2(10, 10)
 
-[node name="Magma14" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-5241, 12426)
-scale = Vector2(10, 10)
-
-[node name="Magma15" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-4905, 13595)
-scale = Vector2(10, 10)
-
-[node name="Magma16" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-4979, 13966)
-scale = Vector2(10, 10)
-
-[node name="Magma17" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-5887, 14060)
-scale = Vector2(10, 10)
-
-[node name="Magma18" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-5356, 13216)
-scale = Vector2(10, 10)
-
-[node name="Magma19" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-4914, 13763)
-scale = Vector2(10, 10)
-
-[node name="Magma20" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-4507, 15457)
-scale = Vector2(10, 10)
-
 [node name="Magma21" parent="Magmas" instance=ExtResource("7_qcc8w")]
 position = Vector2(152, 12569)
 scale = Vector2(10, 10)
@@ -380,6 +422,10 @@ scale = Vector2(10, 10)
 
 [node name="Magma22" parent="Magmas" instance=ExtResource("7_qcc8w")]
 position = Vector2(1447, 11321)
+scale = Vector2(10, 10)
+
+[node name="Magma54" parent="Magmas" instance=ExtResource("7_qcc8w")]
+position = Vector2(1433, 10904)
 scale = Vector2(10, 10)
 
 [node name="Magma23" parent="Magmas" instance=ExtResource("7_qcc8w")]
@@ -395,20 +441,12 @@ position = Vector2(1624, 10903)
 scale = Vector2(10, 10)
 
 [node name="Magma26" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(3420, 11533)
+position = Vector2(3483, 11531)
 scale = Vector2(10, 10)
 
 [node name="Magma27" parent="Magmas" instance=ExtResource("7_qcc8w")]
 position = Vector2(2130, 10307)
 scale = Vector2(-6.76884, 5.84148)
-
-[node name="Magma28" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-7659, 14580)
-scale = Vector2(10, 10)
-
-[node name="Magma29" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-6979, 14167)
-scale = Vector2(10, 10)
 
 [node name="Magma30" parent="Magmas" instance=ExtResource("7_qcc8w")]
 position = Vector2(6342, 11565)
@@ -442,36 +480,12 @@ scale = Vector2(10, 10)
 position = Vector2(7466, 13795)
 scale = Vector2(10, 10)
 
-[node name="Magma38" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-5205, 13414)
-scale = Vector2(10, 10)
-
-[node name="Magma39" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-4965, 13544)
-scale = Vector2(10, 10)
-
-[node name="Magma40" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-5376, 12270)
-scale = Vector2(10, 10)
-
 [node name="Magma41" parent="Magmas" instance=ExtResource("7_qcc8w")]
 position = Vector2(-3303, 18309)
 scale = Vector2(10, 10)
 
-[node name="Magma42" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-5116, 13468)
-scale = Vector2(10, 10)
-
-[node name="Magma43" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-5038, 12316)
-scale = Vector2(10, 10)
-
 [node name="Magma44" parent="Magmas" instance=ExtResource("7_qcc8w")]
 position = Vector2(508, 12461)
-scale = Vector2(10, 10)
-
-[node name="Magma45" parent="Magmas" instance=ExtResource("7_qcc8w")]
-position = Vector2(-4698, 14909)
 scale = Vector2(10, 10)
 
 [node name="Magma46" parent="Magmas" instance=ExtResource("7_qcc8w")]
@@ -734,7 +748,8 @@ rotation = 2.97404
 scale = Vector2(40, 40)
 
 [node name="Weird Fish13" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(2550, 8614)
+position = Vector2(2614, 8127)
+rotation = -0.575959
 scale = Vector2(40, 40)
 
 [node name="Weird Fish9" parent="Enemies" instance=ExtResource("10_27vmg")]
@@ -752,8 +767,8 @@ rotation = -0.959931
 scale = Vector2(40, 40)
 
 [node name="Weird Fish16" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(5402, 7623)
-rotation = -0.767945
+position = Vector2(4898, 7845)
+rotation = -0.479966
 scale = Vector2(40, 40)
 
 [node name="Weird Fish18" parent="Enemies" instance=ExtResource("10_27vmg")]
@@ -797,13 +812,13 @@ rotation = -0.0959931
 scale = Vector2(40, 40)
 
 [node name="Weird Fish36" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(6397, 8262)
+position = Vector2(6326, 8437)
 rotation = -0.0959931
 scale = Vector2(40, 40)
 
 [node name="Weird Fish37" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(-2660, 8349)
-rotation = 1.53414
+position = Vector2(-3446, 8434)
+rotation = 3.16428
 scale = Vector2(40, 40)
 
 [node name="Weird Fish38" parent="Enemies" instance=ExtResource("10_27vmg")]
@@ -832,7 +847,7 @@ rotation = 3.16428
 scale = Vector2(40, 40)
 
 [node name="Weird Fish43" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(-1944, 8108)
+position = Vector2(-3353, 7644)
 rotation = 3.16428
 scale = Vector2(40, 40)
 
@@ -872,7 +887,7 @@ rotation = -0.767945
 scale = Vector2(40, 40)
 
 [node name="Weird Fish51" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(-1944, 8108)
+position = Vector2(-3572, 7395)
 rotation = 3.16428
 scale = Vector2(40, 40)
 
@@ -907,8 +922,8 @@ rotation = 3.16428
 scale = Vector2(40, 40)
 
 [node name="Weird Fish59" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(-2660, 8349)
-rotation = 1.53414
+position = Vector2(-2660, 8404)
+rotation = 3.14159
 scale = Vector2(40, 40)
 
 [node name="Weird Fish60" parent="Enemies" instance=ExtResource("10_27vmg")]
@@ -937,7 +952,7 @@ rotation = 3.16428
 scale = Vector2(40, 40)
 
 [node name="Weird Fish65" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(-1944, 8108)
+position = Vector2(-3579, 7990)
 rotation = 3.16428
 scale = Vector2(40, 40)
 
@@ -972,7 +987,7 @@ rotation = 3.16428
 scale = Vector2(40, 40)
 
 [node name="Weird Fish72" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(-1944, 8108)
+position = Vector2(-2011, 8108)
 rotation = 3.16428
 scale = Vector2(40, 40)
 
@@ -1077,12 +1092,17 @@ rotation = 3.16428
 scale = Vector2(40, 40)
 
 [node name="Weird Fish124" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(1167, 3414)
-rotation = 3.16428
+position = Vector2(1011, 3411)
+rotation = 3.26028
 scale = Vector2(33.945, 33.945)
 
 [node name="Weird Fish126" parent="Enemies" instance=ExtResource("10_27vmg")]
 position = Vector2(-510, 1634)
+rotation = 3.14159
+scale = Vector2(19.67, 19.67)
+
+[node name="Weird Fish127" parent="Enemies" instance=ExtResource("10_27vmg")]
+position = Vector2(-1444, -232)
 rotation = 3.14159
 scale = Vector2(19.67, 19.67)
 
@@ -1132,8 +1152,8 @@ rotation = 3.83623
 scale = Vector2(40, 40)
 
 [node name="Weird Fish28" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(-321, 8236)
-rotation = 3.83623
+position = Vector2(-321, 8075)
+rotation = 3.54825
 scale = Vector2(40, 40)
 
 [node name="Weird Fish29" parent="Enemies" instance=ExtResource("10_27vmg")]
@@ -1288,7 +1308,7 @@ position = Vector2(4823, 9545)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish123" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(4783, 9338)
+position = Vector2(5617, 9635)
 scale = Vector2(40, 40)
 
 [node name="Weird Fish120" parent="Enemies" instance=ExtResource("10_27vmg")]
@@ -1356,5 +1376,35 @@ collision_layer = 2
 position = Vector2(14.209, -16.36)
 shape = SubResource("RectangleShape2D_3o55m")
 
+[node name="WinBox" type="Area2D" parent="."]
+position = Vector2(3691.35, -141.058)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WinBox"]
+position = Vector2(-2.84717, 31.5578)
+shape = SubResource("RectangleShape2D_k062b")
+
+[node name="LoseTest" type="Marker2D" parent="."]
+position = Vector2(-1012, 26519)
+
+[node name="WinTest" type="Marker2D" parent="."]
+position = Vector2(3114, -166)
+
+[node name="DeathFloor" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathFloor"]
+position = Vector2(4012, 28627)
+shape = SubResource("RectangleShape2D_7fjqv")
+
+[node name="DeathWall" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathWall"]
+position = Vector2(20228, 5321.88)
+shape = SubResource("RectangleShape2D_h56yw")
+
 [connection signal="body_entered" from="SunMovementTrigger" to="." method="_on_sun_movement_trigger_body_entered"]
 [connection signal="body_entered" from="Sand disappearance area" to="." method="_on_sand_disappearance_area_body_entered"]
+[connection signal="body_entered" from="WinBox" to="." method="_on_win_box_body_entered"]
+[connection signal="body_entered" from="DeathFloor" to="." method="_on_death_floor_body_entered"]
