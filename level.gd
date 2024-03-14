@@ -8,9 +8,12 @@ var split_speed = 200
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	#DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_CAPTURED)
 	#$"Lil Guy".position = $MovingSunMarker.position
 	if Globals.is_sound_on == false:
 		$AudioStreamPlayer.stop()
+	#if Globals.is_fullscreen:
+		#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	#pass
 
 

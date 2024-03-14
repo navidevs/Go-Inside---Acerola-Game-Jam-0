@@ -4,6 +4,8 @@ var selections_position: int = 0
 var is_sound_on = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if Globals.is_fullscreen:
+		Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 	if not Globals.is_sound_on:
 		$AudioStreamPlayer.stop()
 	selections = $Panel/Control/HBoxContainer/VBoxContainer2
