@@ -5,8 +5,10 @@ var selections_position:int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
+	if not Globals.is_sound_on:
+		$Panel/Control/HBoxContainer/VBoxContainer/SoundToggle.text = "Sound:Off"
+	if not Globals.is_fullscreen:
+		$Panel/Control/HBoxContainer/VBoxContainer/FullscreenToggle.text = "Fullscreen:Off"
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):

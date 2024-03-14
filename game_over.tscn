@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cgklsbp0esx62"]
+[gd_scene load_steps=5 format=3 uid="uid://cgklsbp0esx62"]
 
 [ext_resource type="Script" path="res://game_over.gd" id="1_jsuyc"]
 [ext_resource type="FontFile" uid="uid://d3j6qe6quul3r" path="res://fonts/PressStart2P-vaV7.ttf" id="1_lm0mo"]
+[ext_resource type="AudioStream" uid="uid://dl5gqwlvy61lr" path="res://audio/game_over_edited_even_softer.wav" id="3_033rj"]
 
 [sub_resource type="Theme" id="Theme_m2o2f"]
 default_font = ExtResource("1_lm0mo")
@@ -55,3 +56,7 @@ Press ESC to Exit to
 
 Title Screen"
 horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_033rj")
+autoplay = true

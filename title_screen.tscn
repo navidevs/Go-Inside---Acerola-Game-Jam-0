@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://8t2q23xtyscn"]
+[gd_scene load_steps=13 format=3 uid="uid://8t2q23xtyscn"]
 
 [ext_resource type="FontFile" uid="uid://d3j6qe6quul3r" path="res://fonts/PressStart2P-vaV7.ttf" id="1_j3ekh"]
 [ext_resource type="Texture2D" uid="uid://f5rr88y3dg2u" path="res://sprites/lil guy title standing.png" id="1_mp3cr"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cdu6v42xlhokr" path="res://sprites/environment/normal house.png" id="5_b8xrx"]
 [ext_resource type="Texture2D" uid="uid://c3nul6ec1tfva" path="res://sprites/environment/purpleflower.png" id="6_ow0mg"]
 [ext_resource type="Texture2D" uid="uid://v6phxnx0gyym" path="res://sprites/environment/Sidewalk2.png" id="8_4qian"]
+[ext_resource type="AudioStream" uid="uid://cls1yow131oxs" path="res://audio/intro2.wav" id="8_j7kks"]
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_3bfgw"]
 frames = 2
@@ -317,3 +318,7 @@ offset_top = 415.0
 offset_right = 152.0
 offset_bottom = 455.0
 texture = ExtResource("8_4qian")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_j7kks")
+autoplay = true

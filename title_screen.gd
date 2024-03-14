@@ -4,6 +4,8 @@ var selections_position: int = 0
 var is_sound_on = true
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if not Globals.is_sound_on:
+		$AudioStreamPlayer.stop()
 	selections = $Panel/Control/HBoxContainer/VBoxContainer2
 	#selections_position = 0
 	#selections = [$Control/HBoxContainer/VBoxContainer2/StartSelection,

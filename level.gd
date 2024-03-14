@@ -9,7 +9,9 @@ var split_speed = 200
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#$"Lil Guy".position = $MovingSunMarker.position
-	pass
+	if Globals.is_sound_on == false:
+		$AudioStreamPlayer.stop()
+	#pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
