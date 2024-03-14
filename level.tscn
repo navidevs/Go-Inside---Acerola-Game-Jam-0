@@ -706,18 +706,18 @@ collision_mask = 14
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Weird Fish" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(2884, 6649)
+position = Vector2(2874, 6830)
 rotation = -0.801106
 scale = Vector2(40, 40)
 
 [node name="Weird Fish2" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(2403, 7219)
+position = Vector2(2524, 7225)
 rotation = -1.24791
 scale = Vector2(40, 40)
 
 [node name="Weird Fish3" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(1832, 7390)
-rotation = -1.53414
+position = Vector2(2094, 7493)
+rotation = -1.32645
 scale = Vector2(40, 40)
 
 [node name="Weird Fish4" parent="Enemies" instance=ExtResource("10_27vmg")]
@@ -773,28 +773,28 @@ rotation = -0.479966
 scale = Vector2(40, 40)
 
 [node name="Weird Fish18" parent="Enemies" instance=ExtResource("10_27vmg")]
-position = Vector2(4702, 7589)
+position = Vector2(4740, 7443)
 rotation = -0.767945
 scale = Vector2(40, 40)
 
 [node name="Weird Fish19" parent="Enemies" instance=ExtResource("10_27vmg")]
 position = Vector2(4659, 6976)
-rotation = -0.767945
+rotation = -0.44855
 scale = Vector2(40, 40)
 
 [node name="Weird Fish20" parent="Enemies" instance=ExtResource("10_27vmg")]
 position = Vector2(4673, 6463)
-rotation = -0.767945
+rotation = -0.321141
 scale = Vector2(40, 40)
 
 [node name="Weird Fish21" parent="Enemies" instance=ExtResource("10_27vmg")]
 position = Vector2(4673, 6007)
-rotation = -0.767945
+rotation = -0.193732
 scale = Vector2(40, 40)
 
 [node name="Weird Fish22" parent="Enemies" instance=ExtResource("10_27vmg")]
 position = Vector2(4659, 5480)
-rotation = -0.767945
+rotation = -0.44855
 scale = Vector2(40, 40)
 
 [node name="Weird Fish23" parent="Enemies" instance=ExtResource("10_27vmg")]
